@@ -1,0 +1,30 @@
+            SendLocation sendLocation = new SendLocation();
+            sendLocation.setChatId(String.valueOf(chatId));
+            sendLocation.setLatitude(32.05636);
+            sendLocation.setLongitude(34.86397);
+            try {
+                execute(sendLocation);
+            } catch (TelegramApiException e) {
+                e.printStackTrace();
+            }
+            sendLocation.setLatitude(31.22056);
+            sendLocation.setLongitude(34.88116);
+            try {
+                execute(sendLocation);
+            } catch (TelegramApiException e) {
+                e.printStackTrace();
+            }
+            sendLocation.setLatitude(31.79254);
+            sendLocation.setLongitude(34.70595);
+            try {
+                execute(sendLocation);
+            } catch (TelegramApiException e) {
+                e.printStackTrace();
+            }
+            sendLocation.setLatitude(32.45618);
+            sendLocation.setLongitude(35.05072);
+            try {
+                execute(sendLocation);
+            } catch (TelegramApiException e) {
+                e.printStackTrace();
+            }
